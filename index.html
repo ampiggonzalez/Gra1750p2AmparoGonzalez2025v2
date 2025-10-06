@@ -2,62 +2,139 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Chocotorta - Recipes</title>
+  <title>Quick and Easy Recipe</title>
+  <style>
+    /* CSS Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background-color: #d2b48c; /* marrón claro tipo chocotorta */
+      font-family: Arial, sans-serif;
+      text-align: center;
+      color: #3e2723;
+    }
+
+    .wrapper {
+      width: 1366px;
+      margin: 0 auto;
+      padding: 30px;
+    }
+
+    header {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 40px;
+    }
+
+    header img {
+      width: 80px;
+      height: auto;
+      margin-right: 15px;
+    }
+
+    h1 {
+      font-size: 2.8em;
+      color: #3e2723;
+    }
+
+    h2 {
+      font-size: 2em;
+      margin-top: 20px;
+      color: #4e342e;
+    }
+
+    .banner {
+      margin-top: 20px;
+      margin-bottom: 100px; /* espacio grande antes de las secciones */
+    }
+
+    .banner img {
+      width: 600px;
+      height: auto;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    }
+
+    .content {
+      display: flex;
+      justify-content: center;
+      gap: 50px;
+      margin-bottom: 60px;
+    }
+
+    section {
+      background-color: #f5deb3; /* tono más claro para contraste */
+      padding: 25px;
+      border-radius: 12px;
+      width: 40%;
+      text-align: left;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    h3 {
+      margin-bottom: 15px;
+      color: #5d4037;
+    }
+
+    ul, ol {
+      margin-left: 20px;
+      line-height: 1.6;
+    }
+
+    footer {
+      margin-top: 40px;
+      font-size: 0.85em;
+      color: #4e342e;
+    }
+  </style>
 </head>
 <body>
   <div class="wrapper">
-
- 
     <header>
-      
-      <img src="logo.png" alt="Chocotorta.png" width="80">
-      <h1>Quick and Easy Chocotorta</h1>
+      <img src="logo.png" alt="Logo">
+      <h1>Quick and Easy Recipe</h1>
     </header>
 
-    <div class="banner">
-     
-      <img src="chocotorta.png" alt="Chocotorta" width="400">
-    </div>
-
-   
     <h2>Chocotorta</h2>
 
-    <p>
-      Chocotorta is a famous Argentine dessert, quick and easy to prepare.  
-      Made with chocolate cookies, dulce de leche, and cream cheese.  
-      Perfect for birthdays or family gatherings.
-    </p>
+    <div class="banner">
+      <img src="chocotorta.png" alt="Chocotorta">
+    </div>
 
+    <div class="content">
+      <section>
+        <h3>Ingredients</h3>
+        <ul>
+          <li>2 packs of chocolate cookies</li>
+          <li>400 g (14 oz) dulce de leche</li>
+          <li>400 g (14 oz) cream cheese</li>
+          <li>Coffee or milk to dip the cookies</li>
+          <li>Cocoa powder (optional)</li>
+        </ul>
+      </section>
 
-    <section>
-      <h3>Ingredients</h3>
-      <ul>
-        <li>2 packs of chocolate cookies</li>
-        <li>400 g (14 oz) dulce de leche</li>
-        <li>400 g (14 oz) cream cheese</li>
-        <li>Coffee or milk to dip the cookies</li>
-        <li>Cocoa powder (optional)</li>
-      </ul>
-    </section>
+      <section>
+        <h3>Instructions</h3>
+        <ol>
+          <li>Mix dulce de leche with cream cheese until smooth.</li>
+          <li>Dip cookies in coffee or milk and layer in a dish.</li>
+          <li>Spread a layer of cream mixture on top of the cookies.</li>
+          <li>Repeat layers until all ingredients are used.</li>
+          <li>Sprinkle cocoa powder and refrigerate for at least 3 hours.</li>
+        </ol>
+      </section>
+    </div>
 
-    
-    <section>
-      <h3>Instructions</h3>
-      <ol>
-        <li>Mix dulce de leche with cream cheese until smooth.</li>
-        <li>Dip cookies in coffee or milk and layer in a dish.</li>
-        <li>Spread a layer of cream mixture on top of the cookies.</li>
-        <li>Repeat layers until all ingredients are used.</li>
-        <li>Sprinkle cocoa powder and refrigerate for at least 3 hours before serving.</li>
-      </ol>
-    </section>
-
-   
     <footer>
-      <p>&copy; 2025 Amparo Gozanlez</p>
-      <p><em>© This is a fictitious web page created solely for the purpose of education and training. All products and people associated with this web page are also fictitious. Any resemblance to real brands, products, or people is purely coincidental. Information provided about the product is also fictitious and should not be construed to be representative of actual products on the market in a similar product category.</em></p>
+      <p>&copy; 2025 Amparo Gonzalez</p>
+      <p><em>This is a fictitious web page created solely for the purpose of education and training. All products and people associated with this web page are also fictitious. Any resemblance to real brands, products, or people is purely coincidental. Information provided about the product is also fictitious and should not be construed to be representative of actual products on the market in a similar product category</em></p>
     </footer>
-
   </div>
 </body>
 </html>
+
