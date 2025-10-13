@@ -1,140 +1,201 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="UTF-8">
-  <title>Quick and Easy Recipe</title>
-  <style>
-    /* CSS Reset */
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
+    <meta charset="UTF-8">
+    <title>Chocotorta Recipe | Amparo Gonzalez |2025</title>
 
-    body {
-      background-color: #d2b48c; /* marrón claro tipo chocotorta */
-      font-family: Arial, sans-serif;
-      text-align: center;
-      color: #3e2723;
-    }
+   
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
 
-    .wrapper {
-      width: 1366px;
-      margin: 0 auto;
-      padding: 30px;
-    }
+    <style>
+       
+        body {
+            margin: 0;
+            min-height: 100vh;
+            background-image: url("istockphoto-1210441991-612x612.jpg");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            font-family: Arial, sans-serif;
+            color: #4E342E;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
 
-    header {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      margin-bottom: 40px;
-    }
+      
+        wrapper {
+            width: 95%;
+            max-width: 1200px;
+            background-color: rgba(255, 244, 229, 0.85); 
+            padding: 30px;
+            border-radius: 20px;
+            box-shadow: 5px 5px 20px rgba(0,0,0,0.3);
+            text-align: center;
+        }
 
-    header img {
-      width: 80px;
-      height: auto;
-      margin-right: 15px;
-    }
+        
+        banner {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #D2A679; 
+            padding: 15px;
+            border-radius: 20px;
+            margin-bottom: 20px;
+        }
 
-    h1 {
-      font-size: 2.8em;
-      color: #3e2723;
-    }
+        logo img {
+            width: 100px;
+            border-radius: 50%;
+            margin-right: 15px;
+        }
 
-    h2 {
-      font-size: 2em;
-      margin-top: 20px;
-      color: #4e342e;
-    }
+        h1 {
+            font-family: 'Lobster', cursive;
+            font-size: 3em;
+            color: #7B4F36; 
+        }
 
-    .banner {
-      margin-top: 20px;
-      margin-bottom: 100px; /* espacio grande antes de las secciones */
-    }
+        
+        chocotorta-img img {
+            width: 100%;
+            max-width: 600px;
+            border-radius: 20px;
+            box-shadow: 5px 5px 20px rgba(0,0,0,0.3);
+            margin: 20px auto;
+            display: block;
+        }
 
-    .banner img {
-      width: 600px;
-      height: auto;
-      border-radius: 12px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
-    }
+        
+        description {
+            display: block;
+            font-size: 1.2em;
+            line-height: 1.6;
+            color: #5D4037;
+            margin-bottom: 25px;
+        }
 
-    .content {
-      display: flex;
-      justify-content: center;
-      gap: 50px;
-      margin-bottom: 60px;
-    }
+        
+        main {
+            display: flex;
+            justify-content: space-between;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
 
-    section {
-      background-color: #f5deb3; /* tono más claro para contraste */
-      padding: 25px;
-      border-radius: 12px;
-      width: 40%;
-      text-align: left;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-    }
+        section {
+            padding: 20px;
+            border-radius: 20px;
+            box-shadow: 5px 5px 15px rgba(0,0,0,0.2);
+            background-color: #D2A679; 
+            text-align: left;
+            box-sizing: border-box;
+            flex: 1 1 45%;
+            min-width: 280px;
+        }
 
-    h3 {
-      margin-bottom: 15px;
-      color: #5d4037;
-    }
+        section h2 {
+            font-family: 'Lobster', cursive;
+            text-align: center;
+            color: #7B4F36;
+            margin-bottom: 15px;
+        }
 
-    ul, ol {
-      margin-left: 20px;
-      line-height: 1.6;
-    }
+        
+        ingredients ul {
+            margin: 0;
+            padding-left: 20px;
+            list-style: none;
+        }
 
-    footer {
-      margin-top: 40px;
-      font-size: 0.85em;
-      color: #4e342e;
-    }
-  </style>
+        ingredients li::before {
+            content: "• ";
+            color: #7B4F36;
+            font-weight: bold;
+            margin-right: 10px;
+        }
+
+       
+        steps ol {
+            margin: 0;
+            padding-left: 20px;
+        }
+
+        steps li {
+            margin-bottom: 10px;
+        }
+
+      
+        footer {
+            margin-top: 30px;
+            font-size: 0.9em;
+            background-color: #7B4F36; 
+            color: #FFF8E7;
+            padding: 15px;
+            border-radius: 15px;
+        }
+
+        footer em {
+            display: block;
+            margin-top: 5px;
+        }
+    </style>
 </head>
+
 <body>
-  <div class="wrapper">
-    <header>
-      <img src="logo.png" alt="Logo">
-      <h1>Quick and Easy Recipe</h1>
-    </header>
+    <wrapper>
+        <banner>
+            <logo>
+                <img src="logo.png" alt="Chocotorta Logo">
+            </logo>
+            <h1>Chocotorta Recipe</h1>
+        </banner>
 
-    <h2>Chocotorta</h2>
+        <chocotorta-img>
+            <img src="chocotorta.png" alt="Chocotorta">
+        </chocotorta-img>
 
-    <div class="banner">
-      <img src="chocotorta.png" alt="Chocotorta">
-    </div>
+        <description>
+            Chocotorta is a classic Argentine no-bake dessert made by layering chocolate cookies with a creamy mixture of dulce de leche and cream cheese. 
+            Perfect for birthdays, family gatherings, or any special occasion, this sweet treat combines crunchy cookies with a soft, rich filling that melts in your mouth. 
+            Easy to prepare and incredibly delicious, it’s a favorite for dessert lovers of all ages!
+        </description>
 
-    <div class="content">
-      <section>
-        <h3>Ingredients</h3>
-        <ul>
-          <li>2 packs of chocolate cookies</li>
-          <li>400 g (14 oz) dulce de leche</li>
-          <li>400 g (14 oz) cream cheese</li>
-          <li>Coffee or milk to dip the cookies</li>
-          <li>Cocoa powder (optional)</li>
-        </ul>
-      </section>
+        <main>
+            <section>
+                <h2>Ingredients</h2>
+                <ingredients>
+                    <ul>
+                        <li>2 packs of chocolate cookies</li>
+                        <li>400 g (14 oz) dulce de leche</li>
+                        <li>400 g (14 oz) cream cheese</li>
+                        <li>Coffee or milk to dip the cookies</li>
+                        <li>Cocoa powder (optional)</li>
+                    </ul>
+                </ingredients>
+            </section>
 
-      <section>
-        <h3>Instructions</h3>
-        <ol>
-          <li>Mix dulce de leche with cream cheese until smooth.</li>
-          <li>Dip cookies in coffee or milk and layer in a dish.</li>
-          <li>Spread a layer of cream mixture on top of the cookies.</li>
-          <li>Repeat layers until all ingredients are used.</li>
-          <li>Sprinkle cocoa powder and refrigerate for at least 3 hours.</li>
-        </ol>
-      </section>
-    </div>
+            <section>
+                <h2>Steps</h2>
+                <steps>
+                    <ol>
+                        <li>Mix dulce de leche with cream cheese until smooth.</li>
+                        <li>Dip cookies in coffee or milk and layer in a dish.</li>
+                        <li>Spread a layer of cream mixture on top of the cookies.</li>
+                        <li>Repeat layers until all ingredients are used.</li>
+                        <li>Sprinkle cocoa powder and refrigerate for at least 3 hours.</li>
+                    </ol>
+                </steps>
+            </section>
+        </main>
 
-    <footer>
-      <p>&copy; 2025 Amparo Gonzalez</p>
-      <p><em>This is a fictitious web page created solely for the purpose of education and training. All products and people associated with this web page are also fictitious. Any resemblance to real brands, products, or people is purely coincidental. Information provided about the product is also fictitious and should not be construed to be representative of actual products on the market in a similar product category</em></p>
-    </footer>
-  </div>
+        <footer>
+            &copy; 2025 Amparo Gonzalez
+            <em>This is a fictitious web page created solely for the purpose of education and training. All products and people associated with this web page are also fictitious. Any resemblance to real brands, products, or people is purely coincidental. Information provided about the product is also fictitious and should not be construed to be representative of actual products on the market in a similar product category.</em>
+        </footer>
+    </wrapper>
 </body>
 </html>
-
